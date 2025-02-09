@@ -7,6 +7,7 @@ const EventSchema = new mongoose.Schema({
 	description: String,
 	date: Date,
 	category: String,
+	location: String,
 	attendees: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
 	createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 });

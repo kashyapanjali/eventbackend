@@ -18,7 +18,7 @@ mongoose
 	.catch((err) => console.error(err));
 
 app.use("/api/users", require("./route/userRoutes"));
-// app.use("/api/events", require("./route/eventRoutes"));
+app.use("/api/events", require("./route/eventRoutes"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
